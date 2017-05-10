@@ -1,0 +1,54 @@
+
+= Observations
+F dog eat chocolate
+T animal eat garbage
+
+= Subclasses
+animal: raccoon bear lion dog bird elephant peanut
+color: red orange yellow green blue purple
+
+= Negations
+# A implies !B
+dead alive
+float sink
+fit not-fit
+throw not-throw
+
+= Requirements
+# A implies B
+einstein(0) !alive(2)
+bird flies
+fly(1) flies(0)
+animal(0) air(2)
+dog !flies
+eat(1) edible(2)
+garbage !edible
+outerspace !air
+size:airplane size:train
+weight:elephant weight:car
+height:dog height:inch
+height:gate height:box
+
+= Reasons
+# N V N -> (N1,J(V)) > (N2,J(V))
+# verb has to be in increasing order
+sink density
+not-fit size
+smash weight
+
+= Scales
+density: brick water oil
+weight: train car brick cellphone peanut
+size: train car brick cellphone fingernail
+height: inch box gate house 
+
+= Limits
+# N1 can't V anything > than N2 in quality Q
+human jump height gate
+dog jump height box
+human not-throw weight brick
+
+
+
+
+
