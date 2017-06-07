@@ -1,0 +1,50 @@
+
+alive is the opposite of dead | neg alive dead
+happy is the negative of sad | neg happy sad
+happy is not sad | neg happy sad
+happy and sad are opposites | neg happy sad
+
+purple is a color | sub purple color
+a bird is an animal | sub bird animal
+dogs are animals | sub dog animal
+a dog is a type of animal | sub dog animal
+a banana is a variety of fruit | sub banana fruit
+a fruit is food | sub fruit food
+all dogs are animals | dub dog animal
+
+einstein is alive | req einstein-0 alive-2
+grass is green | req grass-0 green-2
+an animal needs air | req animal-0 air-2
+animals need air | req animal-0 air-2
+people only eat what is edible | req eat-1 edible-2
+there is no air in outerspace | req outerspace !air
+garbage is not edible | req garbage !edible
+a bird can fly | req bird-0 fly-1
+dogs do not have arms | reg dog-0 arm-2
+a dog does not have arms | req dog-0 arm-2
+a giraffe is tall | req giraffe-0 tall-2
+fires exist when it is hot | req fire-0 hot-2
+a desert has no water | req desert !water
+you need water to swim | req water-2 !swim-1
+a frog does not swim | req frog-0 !swim-1
+frogs cannot swim | req frog-0 !swim-1
+a frog does not have arms | req frog !arm
+arms are necessary to throw | req throw arm
+one needs arms to throw | req arm-2 throw-1
+one cannot swim in the desert | req desert-2 !swim-1
+you cannot swim in the desert | req desert-2 !swim-1
+only birds fly | req fly-1 bird-0
+only a bird can fly | req fly-1 bird-0
+
+a dog does not eat chocolate | obs dog !eat chocolate
+a dog does not eat a chocolate | obs dog !eat chocolate
+dogs do not eat chocolate | obs dog !eat chocolate
+dogs eats chocolate | obs dog eat chocolate
+a dog eats chocolate | obs dog eat chocolate
+a dogs eats a chocolate | obs dog eat chocolate
+a dog can eat chocolate | obs dog eat chocolate
+a dog can eat a chocolate | obs dog eat chocolate
+dogs can eat chocolate | obs dog eat chocolate
+
+
+

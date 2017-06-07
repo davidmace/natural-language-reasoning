@@ -1,0 +1,110 @@
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"></link>
+</head>
+<body onload="page_load()">
+	<div style="width: 100%;">
+		<div style="float:left; width: 30%">
+			<div id="chatboard">
+				<div class='bot'>Ask me a question.</div>
+			</div>
+			<br/>
+			<input type="text" id="msg-field">
+			<input id="submit-msg" type="submit" value="Submit" onclick="submit_msg()"></br>
+			<br/>
+			<div>
+				Note: Questions must be of form [NOUN][VERB][PREP-PHRASE/DIR-OBJ/ADJ/ADV] like "Can a bird fly in outerspace?"
+			</div>
+		</div>
+		<div style="float:right;">
+			<div>
+				<h2>Example 1:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a parrot fly in outerspace?</div>
+				<div class='bot'>I don't know. Please explain the answer to me.</div>
+				<div class='user'>A bird can fly. A parrot is a bird. An animal needs air. A bird is an animal. There is no air in outerspace.</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a bird fly in April?</div>
+				<div class='bot'>Yes.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a parrot fly in outerspace?</div>
+				<div class='bot'>No.</div>
+				<hr>
+				<h2>Example 2:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a dog swim in a desert?</div>
+				<div class='bot'>I don't know. Please explain the answer to me.</div>
+				<div class='user'>One cannot swim in the desert.</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a crocodile swim in a desert?</div>
+				<div class='bot'>No.</div>
+				<hr>
+
+				<h2>Example 3:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a person lift a giraffe?</div>
+				<div class='bot'>What is closest to the weight of giraff? (train,car,brick,cellphon,peanut)</div>
+				<div class='user'>car</div>
+				<div class='bot'>What is the max weight a human can lift? (train,car,brick,cellphon,peanut)?</div>
+				<div class='user'>brick</div>
+				<div class='bot'>Can a person lift a rhino?</div>
+				<div class='user'>What is closest to the weight of rhino? (train,car,brick,cellphon,peanut)</div>
+				<div class='bot'>car</div>
+				<div class='user'>Can a person lift a rhino?</div>
+				<div class='bot'>Yes.</div>
+				<hr>
+
+				<h2>Example 4:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Will a person sink in water?</div>
+				<div class='bot'>What is closest to the densiti of human? (brick,water,oil)</div>
+				<div class='user'>brick</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Will a person sink in oil?</div>
+				<div class='bot'>Yes.</div>
+				<hr>
+
+				<h2>Example 5:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a raccoon speak spanish?</div>
+				<div class='bot'>I don't know. Please explain the answer to me.</div>
+				<div class='user'>Animals cannot speak. Raccoons are animals.</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a skunk speak German?</div>
+				<div class='bot'>I don't know. Please explain the answer to me.</div>
+				<div class='user'>Skunks are animals.</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Can a skunk speak Dutch?</div>
+				<div class='bot'>No.</div>
+				<hr>
+
+				<h2>Example 6:</h2>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Does a cheetah run slow?</div>
+				<div class='bot'>I don't know. Please explain the answer to me.</div>
+				<div class='user'>A cheetah is fast. Slow is the opposite of fast.</div>
+				<div class='bot'>Thanks.</div>
+				<div class='bot'>Ask me a question.</div>
+				<div class='user'>Does a cheetah run slow?</div>
+				<div class='bot'>No.</div>
+				<br/>
+			</div>
+
+
+		</div>
+	</div>
+
+	
+
+
+
+
+	
+	
+</body>

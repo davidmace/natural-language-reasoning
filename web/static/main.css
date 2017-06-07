@@ -1,0 +1,16 @@
+.bot {
+}
+
+.user {
+	text-align: right;
+	font-weight: bold;
+}
+
+#chatboard {
+	width: 300px;
+	float:left;
+}
+
+#msg-field {
+	width: 300px;
+}
