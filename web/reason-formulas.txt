@@ -16,7 +16,7 @@ einstein is alive | req einstein-0 alive-2
 grass is green | req grass-0 green-2
 an animal needs air | req animal-0 air-2
 animals need air | req animal-0 air-2
-people only eat what is edible | req eat-1 edible-2
+you only eat what is edible | req eat-1 edible-2
 there is no air in outerspace | req outerspace !air
 garbage is not edible | req garbage !edible
 a bird can fly | req bird-0 fly-1
@@ -35,6 +35,12 @@ one cannot swim in the desert | req desert-2 !swim-1
 you cannot swim in the desert | req desert-2 !swim-1
 only birds fly | req fly-1 bird-0
 only a bird can fly | req fly-1 bird-0
+a dog runs | req dog-0 run-1
+dogs run | req dog-0 run-1
+dogs can run | req dog-0 run-1
+a dog can run | req dog-0 run-1
+
+
 
 a dog does not eat chocolate | obs dog !eat chocolate
 a dog does not eat a chocolate | obs dog !eat chocolate
@@ -45,6 +51,11 @@ a dogs eats a chocolate | obs dog eat chocolate
 a dog can eat chocolate | obs dog eat chocolate
 a dog can eat a chocolate | obs dog eat chocolate
 dogs can eat chocolate | obs dog eat chocolate
-
-
-
+dogs can eat in outerspace | obs dog eat outerspace
+dogs can eat in the outerspace | obs dog eat outerspace
+a dog can eat in outerspace | obs dog eat outerspace
+a dog can eat in the outerspace | obs dog eat outerspace
+dogs cannot eat in outerspace | obs dog eat outerspace
+dogs cannot eat in the outerspace | obs dog !eat outerspace
+a dog cannot eat in outerspace | obs dog !eat outerspace
+a dog cannot eat in the outerspace | obs dog !eat outerspace

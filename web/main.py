@@ -393,6 +393,12 @@ def load_reasons() :
       sent = sent.replace(" don't ",' cannot ')
       sent = sent.replace(" does ",' can ')
       sent = sent.replace(" do ",' can ')
+      sent = sent.replace(" on ",' in ')
+      sent = sent.replace(" to ",' in ')
+      sent = sent.replace(" at ",' in ')
+      sent = sent.replace(" from ",' in ')
+      sent = sent.replace(" off ",' in ')
+      sent = sent.replace(" through ",' in ')
 
       # extract words from formula on right
       logic_parts = logic.split(' ')
@@ -453,6 +459,12 @@ def process_reason(sent,Z,Y) :
   sent = sent.replace(" don't ",' cannot ')
   sent = sent.replace(" does ",' can ')
   sent = sent.replace(" do ",' can ')
+  sent = sent.replace(" on ",' in ')
+  sent = sent.replace(" to ",' in ')
+  sent = sent.replace(" at ",' in ')
+  sent = sent.replace(" from ",' in ')
+  sent = sent.replace(" off ",' in ')
+  sent = sent.replace(" through ",' in ')
 
   words = list(set(sent.split()) - Y['syntax_words'])
   formula = sent
